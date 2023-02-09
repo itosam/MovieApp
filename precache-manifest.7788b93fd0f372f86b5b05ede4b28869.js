@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5f14ef8fc223be0914a9",
+    "revision": "678994ee51cffaee2580",
     "url": "/MovieApp/static/css/main.4153280a.chunk.css"
   },
   {
-    "revision": "5f14ef8fc223be0914a9",
-    "url": "/MovieApp/static/js/main.5f14ef8f.chunk.js"
+    "revision": "678994ee51cffaee2580",
+    "url": "/MovieApp/static/js/main.678994ee.chunk.js"
   },
   {
     "revision": "aad95fee85c18626c350",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/MovieApp/static/js/runtime~main.5dfb1f54.js"
   },
   {
-    "revision": "3149298d6dc937914d2ecdddbe5ff059",
+    "revision": "44dd242a607cdb512d84012feef0480e",
     "url": "/MovieApp/index.html"
   }
 ];
