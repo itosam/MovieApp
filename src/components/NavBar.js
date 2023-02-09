@@ -18,7 +18,7 @@ function NavBar() {
                 <Col>
                   <Badge pill bg="light" style={{ padding: "10px 20px" }}>
                     <Nav.Item>
-                      <Link to="/" style={{ textDecoration: "none" }}>
+                      <Link to="/MovieApp" style={{ textDecoration: "none" }}>
                         Home
                       </Link>
                     </Nav.Item>
