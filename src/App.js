@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/MovieApp">
+        <Route exact path="/movieapp">
           <Home />
         </Route>
         <Route path="/about">
