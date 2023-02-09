@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     fetch(
-      "http://localhost:3001/movies?_sort=release_date&_order=desc&_limit=3"
+      "https://movie-json-server.onrender.com/movies?_sort=release_date&_order=desc&_limit=3"
     )
       .then((res) => res.json())
       .then((recentMovies) => {

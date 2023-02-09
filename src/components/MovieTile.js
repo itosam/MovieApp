@@ -13,7 +13,7 @@ function MovieTile({
   onFavoriteMovies,
 }) {
   const handleFavoriteClick = () => {
-    fetch(`http://localhost:3001/movies/${id}`, {
+    fetch(`https://movie-json-server.onrender.com/movies/${id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

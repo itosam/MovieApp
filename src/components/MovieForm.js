@@ -28,7 +28,7 @@ function MovieForm({ onAddMovie }) {
       overview: formData.plot,
       vote_average: formData.rating,
     };
-    fetch("http://localhost:3001/movies", {
+    fetch("https://movie-json-server.onrender.com/movies", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newMovie),

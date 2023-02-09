@@ -12,7 +12,9 @@ function MovieContainer() {
   const [favorites, setFavorites] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/movies?_sort=release_date&_order=desc")
+    fetch(
+      "https://movie-json-server.onrender.com/movies?_sort=release_date&_order=desc"
+    )
       .then((r) => r.json())
       .then((movies) => {
         console.log("movie container loaded");
