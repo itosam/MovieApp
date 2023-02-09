@@ -3,6 +3,8 @@
 ![movieappdemo](https://user-images.githubusercontent.com/96760206/207414974-b76d1186-3eff-4903-a67f-2017703f696b.gif)
 
 
+[SITE](https://itosam.github.io/movieapp/)
+
 For our Project, we created a mock movie database, and have added below features/user interaction
 
 - included 4 routes for the user to interact with (Home, Movies page, Add Movies form, About page)
