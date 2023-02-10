@@ -5,6 +5,9 @@
 
 [SITE](https://itosam.github.io/movieapp/)
 
+Front-End hosted on gh-pages
+JSON data hosted on Render
+
 For our Project, we created a mock movie database, and have added below features/user interaction
 
 - included 4 routes for the user to interact with (Home, Movies page, Add Movies form, About page)
