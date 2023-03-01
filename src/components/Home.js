@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 
 const Home = () => {
   const [recentMovies, setRecentMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -15,6 +16,7 @@ const Home = () => {
       .then((res) => res.json())
       .then((recentMovies) => {
         setRecentMovies(recentMovies);
+        setIsLoading(false);
       });
   }, []);
 
@@ -32,6 +34,8 @@ const Home = () => {
       <h3 className="movie-box-heading">
         <strong>Recent Releases:</strong>
       </h3>
+  {isLoading && <p>Loading...Please Wait</p>}
+      {!isLoading}
       {recentMovies.map((movie) => (
         <img
           className="home-poster"

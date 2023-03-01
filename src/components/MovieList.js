@@ -10,7 +10,10 @@ function MovieList({
   setSearchQuery,
   onFavoriteMovies,
   onFavoritesClick,
+  isLoading,
+  setIsLoading
 }) {
+  //broken code for mapping movies per page)
   // const [moviesIndex, setMoviesIndex] = useState(4);
   // const movieCards = movies.slice(0, moviesIndex).map((movie) => {
   const movieCards = movies.map((movie) => {
@@ -35,6 +38,7 @@ function MovieList({
   return (
     <Container className="bg-light text-center" style={{ marginTop: "100px" }}>
       <h2>Movies</h2>
+
       <input
         style={{
           borderRadius: "5px",
@@ -60,6 +64,8 @@ function MovieList({
       >
         {favorites ? "Show All" : "Show Favorites"}
       </button>
+      {isLoading && <p>Loading...Please Wait</p>}
+      {!isLoading}
       <div className="grid text-left">{movieCards}</div>
       {/* <button onClick={handleClickMore}>Show More!</button> */}
     </Container>

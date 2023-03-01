@@ -10,6 +10,7 @@ function MovieContainer() {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [favorites, setFavorites] = useState(false);
+   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -19,6 +20,7 @@ function MovieContainer() {
       .then((movies) => {
         console.log("movie container loaded");
         setMovies(movies);
+        setIsLoading(false)
       });
   }, []);
 
@@ -48,9 +50,10 @@ function MovieContainer() {
   }
 
   return (
-    <Container>
+    <Container> 
       <Switch>
         <Route exact path={["/movies"]}>
+         
           <MovieList
             movies={moviesToDisplay}
             searchQuery={searchQuery}
@@ -58,6 +61,8 @@ function MovieContainer() {
             setSearchQuery={setSearchQuery}
             onFavoritesClick={handleShowFavoriteMovies}
             onFavoriteMovies={onFavoriteMovies}
+            isLoading= {isLoading}
+            setIsLoading = {setIsLoading}
           />
         </Route>
         <Route path="/movies/new">
