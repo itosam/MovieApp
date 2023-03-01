@@ -66,7 +66,7 @@ function About() {
               top: "80px",
             }}
           >
-            <h3>Client Side routing with React Router v5</h3>
+            <h3>Client Side routing with React Router</h3>
           </Carousel.Caption>
         </Carousel.Item>
 
@@ -87,7 +87,7 @@ function About() {
             }}
           >
             <h3>
-              Debounced searching via a combination of useState and useEffect
+             Searching via a combination of useState and useEffect
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
