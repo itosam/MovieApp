@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MovieTile from "./MovieTile";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
+import LoadScreen from "./LoadScreen";
 
 function MovieList({
   movies,
@@ -64,7 +64,7 @@ function MovieList({
       >
         {favorites ? "Show All" : "Show Favorites"}
       </button>
-      {isLoading && <p>Loading...Please Wait</p>}
+      {isLoading && <LoadScreen/>}
       {!isLoading}
       <div className="grid text-left">{movieCards}</div>
       {/* <button onClick={handleClickMore}>Show More!</button> */}

@@ -56,6 +56,7 @@ function MovieForm({ onAddMovie }) {
       >
         <Form.Group className="my-3 mx-3">
           <h3>Add A New Movie</h3>
+          <h6>Add any recently released movies to our database!</h6>
           <Row>
             <Col>
               <Form.Label htmlFor="title">Movie Title</Form.Label>
@@ -106,9 +107,9 @@ function MovieForm({ onAddMovie }) {
               />
             </Col>
           </Row>
-          ​<Form.Label htmlFor="plot">Plot Summary</Form.Label>
+          ​<Form.Label htmlFor="plot" style={{paddingTop:"20px"}}>Plot Summary</Form.Label>
           <Form.Control
-            className="my-3"
+          
             as="textarea"
             rows={3}
             id="plot"
@@ -117,7 +118,7 @@ function MovieForm({ onAddMovie }) {
             onChange={handleChange}
             value={formData.plot}
           />
-          <Button type="submit" class="my-3">
+          <Button style={{marginTop:"20px"}} variant="outline-dark" type="submit" class="my-3">
             Add Movie
           </Button>
         </Form.Group>

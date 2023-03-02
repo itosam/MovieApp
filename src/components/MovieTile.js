@@ -47,7 +47,7 @@ function MovieTile({
             <strong>Rating</strong>:{rating}
           </p>
         </Card.Text>
-        <Button variant="primary" onClick={handleFavoriteClick}>
+        <Button variant="outline-dark" onClick={handleFavoriteClick}>
           {favorite ? "remove Favorite" : "add to Favorites"}
         </Button>
       </Card.Body>

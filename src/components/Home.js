@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import LoadScreen from "./LoadScreen"
 import { Link } from "react-router-dom";
 //bootstrap import below
 import { Container } from "react-bootstrap";
@@ -34,11 +35,12 @@ const Home = () => {
       <h3 className="movie-box-heading">
         <strong>Recent Releases:</strong>
       </h3>
-  {isLoading && <p>Loading...Please Wait</p>}
+  {isLoading && <LoadScreen/>}
       {!isLoading}
       {recentMovies.map((movie) => (
         <img
           className="home-poster"
+          alt="recent movie posters"
           src={movie.poster_path}
           style={{ width: "33%" }}
         />
