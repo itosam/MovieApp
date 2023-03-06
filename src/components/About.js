@@ -46,7 +46,10 @@ function About() {
                 movies hosted on a JSON server. </h4> 
                 <h5>This application features:</h5>
                 <ul>
-                
+                <li>Data fetching via JSON server</li>
+                <li>Client Side routing with React Routing</li>
+                <li>Search functionality using useState/useEffects</li>
+                <li>styling and formatting with Bootstrap and CSS</li>
                 </ul>
            
             </Card.Body>
