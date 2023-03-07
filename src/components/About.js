@@ -43,13 +43,14 @@ function About() {
               <h4>
                 The Slate Movie Data base is a personal movie data base that will allow
                 users to search for movies, look at movie details, and add new
-                movies hosted on a JSON server. </h4> 
+                movies hosted on a JSON server. Users can also add/remove movies to a "favorites" list based on their tastes. </h4><br/> 
+
                 <h5>This application features:</h5>
-                <ul>
+                <ul style={{listStyleType:"none"}}>
                 <li>Data fetching via JSON server</li>
                 <li>Client Side routing with React Routing</li>
                 <li>Search functionality using useState/useEffects</li>
-                <li>styling and formatting with Bootstrap and CSS</li>
+                <li>Styling and formatting with Bootstrap and CSS</li>
                 </ul>
            
             </Card.Body>
