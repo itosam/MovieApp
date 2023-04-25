@@ -14,10 +14,10 @@ const LoadScreen = () => {
     >
       <h4 style={{ paddingRight: "5px" }}>
         <img style={{ width: "30px" }} alt="slate img" src={slate} />{" "}
-        {" "}Loading Movies{" "}
+        {" "}Loading Your Movies{" "}
       </h4>
       <br />
-      <ReactLoading type="spin" color="grey" />
+      <ReactLoading type="spin" color="blue" />
     </div>
   );
 };
