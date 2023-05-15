@@ -5,7 +5,8 @@
 
 [SITE](https://itosam.github.io/movieapp/)
 
-Front-End hosted on gh-pages
+<a href=https://vimeo.com/823794911><strong>DEMO VIDEO</strong></a><br/>
+Front-End hosted on gh-pages<br/>
 JSON data hosted on Render
 
 For our Project, we created a mock movie database, and have added below features/user interaction
